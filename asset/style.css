@@ -32,7 +32,6 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
     border-top: solid 1px var(--color-3);
     border-bottom: solid 1px var(--color-3);
     margin-top: 20px;
-    width: 100vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
 }
