@@ -496,7 +496,8 @@ footer input{
         top: 8%;
     }
     #personnage-2 {
-        display:none
+        left: 21%;
+        bottom: 25%;
     }
 }
 
