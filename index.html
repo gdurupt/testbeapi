@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEst Beapi</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- COde custom -->
     <link href="asset/style.css" rel="stylesheet">
     <script src="asset/script.js"></script>
 </head>
+
 <body class="container-fluid">
 
-    <!-- Header -->
+    <!-- Header Boostrap -->
     <header id="navigation">
         <nav class="navbar navbar-expand-lg navbar-light col-10 mx-auto">
+            <!-- Logo -->
             <a class="navbar-brand" href="#"><img src="asset/images/logo.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <!-- Burger responsive -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          
+            <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">Product</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">Customers</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#">Ressources</a>
-                </li>
-                <div class="d-flex align-items-center justify-content-space-between ml-lg-5">
-                    <li class="nav-item mx-1">
-                        <button type="button" class="btn px-3 py-2" id="signIn">Sign In</button>
-                      </li>
-                    <li class="nav-item mx-1">
-                        <button type="button" class="btn px-3 py-2" id="signUp">Sign Up</button>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Product</a>
                     </li>
-                </div>
-              </ul>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Ressources</a>
+                    </li>
+                    <!-- Boutton -->
+                    <div class="d-flex align-items-center justify-content-space-between ml-lg-5">
+                        <li class="nav-item mx-1">
+                            <button type="button" class="btn px-3 py-2" id="signIn">Sign In</button>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <button type="button" class="btn px-3 py-2" id="signUp">Sign Up</button>
+                        </li>
+                    </div>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
 
     <!-- Presentation -->
     <section id="first-section" class="d-flex justify-content-center align-items-center col-10 mx-auto my-5">
+        <!-- Texte -->
         <div class="col-12 col-lg-7">
             <h2 class="col-10 col-lg-6 px-0">The Design Thinking superpowers</h2>
-            <p class="col-10 col-lg-5 px-0 my-5">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+            <p class="col-10 col-lg-5 px-0 my-5">Tools, tutorials, design and innovation experts, all in one place! The
+                most intuitive way to imagine your next user experience.</p>
             <div class="d-flex justify-content-start align-items-center">
                 <button id="first-section-button">Get started</button>
                 <p class="d-flex justify-content-start align-items-center my-0 mx-4">
@@ -62,15 +79,18 @@
                 </p>
             </div>
         </div>
+        <!-- Image -->
         <div class="col-5 d-none d-lg-block">
             <img src="asset/images/headerOval.png" alt="Header-oval" class="img-fluid image_animation">
         </div>
     </section>
 
-    
+
     <!-- Feature -->
     <section id="feature" class="d-flex flex-column justify-content-center align-items-center col-12 mx-auto my-5">
+        <!-- Titre -->
         <h2 class="col-xl-3 col-lg-6 mx-auto text-center mb-4">We design tools to unveil your superpowers</h2>
+        <!-- Liste features-->
         <div class="d-flex justify-content-around align-items-start col-9 col-md-12  col-xl-9 mx-auto my-5 flex-wrap">
             <div class="col-xl-2 col-lg-3 col-md-5 col-9">
                 <img src="asset/images/purple-feature.png" alt="feature">
@@ -93,6 +113,7 @@
                 <p class="feature-text col-11 px-0">Personal choices and the overall personality of the person. </p>
             </div>
         </div>
+        <!-- Boutton -->
         <div>
             <button class="btn" id="feature-button">SIGN UP NOW</button>
         </div>
@@ -100,11 +121,14 @@
 
 
     <!-- Effortles validation -->
-    <section id="effort-validation" class="d-flex justify-content-center align-items-center col-10 mx-auto my-5 flex-column flex-lg-row">
+    <section id="effort-validation"
+        class="d-flex justify-content-center align-items-center col-10 mx-auto my-5 flex-column flex-lg-row">
+        <!-- Texte -->
         <div class="col-lg-7 col-md-8 col-sm-11 col-12">
             <p class="up_title">Effortless Validation for</p>
             <h2 class="mb-4">Design Professionals</h2>
-            <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
+            <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
+                overall personality of the person. </p>
             <p class="sub_title">Accessory makers</p>
             <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
             <p class="sub_title">Alterationists</p>
@@ -112,6 +136,7 @@
             <p class="sub_title">Custom Design designers</p>
             <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
         </div>
+        <!-- Bouton -->
         <div class="col-lg-5 col-md-4 col-sm-9 col-9">
             <img src="asset/images/effort-validation.png" alt="Header-oval" class="img-fluid">
         </div>
@@ -120,14 +145,18 @@
 
 
     <!-- Product manager -->
-    <section id="product-manager" class="d-flex justify-content-between align-items-center col-10 mx-auto my-5 flex-column-reverse flex-lg-row">
+    <section id="product-manager"
+        class="d-flex justify-content-between align-items-center col-10 mx-auto my-5 flex-column-reverse flex-lg-row">
+        <!-- Image -->
         <div class="col-lg-5 col-md-4 col-sm-9 col-9">
             <img src="asset/images/product-managers.png" alt="Header-oval" class="img-fluid">
         </div>
+        <!-- Texte -->
         <div class="col-lg-5 col-md-8 col-sm-11 col-12">
             <p class="up_title">Easier decision making for</p>
             <h2 class="mb-4">Product Managers</h2>
-            <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
+            <p>The Myspace page defines the individual, his or her characteristics, traits, personal choices and the
+                overall personality of the person. </p>
             <div class="d-flex align-items-center my-4">
                 <img src="asset/images/point.png" alt="point" class="img-fluid mr-3">
                 <p class="m-0">Never worry about overpaying for your energy again. </p>
@@ -145,11 +174,14 @@
 
 
     <!-- marketers -->
-    <section id="marketers" class="d-flex justify-content-center align-items-center col-10 mx-auto my-5 flex-column flex-lg-row">
+    <section id="marketers"
+        class="d-flex justify-content-center align-items-center col-10 mx-auto my-5 flex-column flex-lg-row">
+        <!-- Texte -->
         <div class="col-lg-7 col-md-8 col-sm-11 col-12">
             <p class="up_title">Optimisation for</p>
             <h2 class="mb-4">Marketers</h2>
-            <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </p>
+            <p>Few would argue that, despite the advancements of feminism over the past three decades, women still face
+                a double standard when it comes to their behavior. </p>
             <p class="sub_title">Accessory makers</p>
             <p>While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun</p>
             <p class="sub_title">Alterationists</p>
@@ -157,6 +189,7 @@
             <p class="sub_title">Custom Design designers</p>
             <p>If you are looking for a new way to promote your business that won’t cost you more money, </p>
         </div>
+        <!-- Image -->
         <div class="col-lg-5 col-md-4 col-sm-9 col-9">
             <img src="asset/images/marketers.png" alt="Header-oval" class="img-fluid">
         </div>
@@ -164,7 +197,9 @@
 
 
     <!-- Contact -->
-    <section id="contact" class="d-flex justify-content-center align-items-center col-12 mx-auto my-5 position-relative flex-column flex-md-row">
+    <section id="contact"
+        class="d-flex justify-content-center align-items-center col-12 mx-auto my-5 position-relative flex-column flex-md-row">
+        <!-- Block central -->
         <div class="d-flex flex-column justify-content-center align-content-center">
             <h2 class="text-center">Need a super hero?</h2>
             <p class="text-center col-7 mx-auto my-4">Do you require some help for your project: Conception workshop,
@@ -173,6 +208,8 @@
                 <button class="btn" id="button-contact">Contact our expert</button>
             </div>
         </div>
+
+        <!-- Personnage -->
         <div id="personnage-1" class="position-absolute">
             <div class="bulle-text">
                 <p>I can take care of your pitch</p>
@@ -180,6 +217,7 @@
             <img src="asset/images/tete-1.png" alt="Personnage" class="img-fluid">
         </div>
 
+        <!-- Personnage -->
         <div id="personnage-2" class="position-absolute">
             <div class="bulle-text">
                 <p>I can design you website</p>
@@ -187,6 +225,7 @@
             <img src="asset/images/tete-2.png" alt="Personnage" class="img-fluid">
         </div>
 
+        <!-- Personnage -->
         <div id="personnage-3" class="position-absolute">
             <div class="bulle-text">
                 <p>I will define the profile of your users</p>
@@ -194,6 +233,7 @@
             <img src="asset/images/tete-3.png" alt="Personnage" class="img-fluid">
         </div>
 
+        <!-- Personnage -->
         <div id="personnage-4" class="position-absolute">
             <div class="bulle-text">
                 <p>I can prototype your app</p>
@@ -201,44 +241,53 @@
             <img src="asset/images/tete-4.png" alt="Personnage" class="img-fluid">
         </div>
 
+        <!-- Personnage -->
         <div id="personnage-5" class="position-absolute">
             <div class="bulle-text">
                 <p>I can help marketing strategy</p>
             </div>
             <img src="asset/images/tete-5.png" alt="Personnage" class="img-fluid">
         </div>
-
     </section>
 
 
     <!-- Slider -->
-    <section id="slider" class="d-flex flex-column justify-content-center align-items-center col-xl-9 col-lg-12 mx-auto my-5">
+    <section id="slider"
+        class="d-flex flex-column justify-content-center align-items-center col-xl-9 col-lg-12 mx-auto my-5">
+        <!-- TExte -->
         <div class="w-100 d-flex flex-column justify-content-start my-3 col-10 col-sm-11 px-0">
             <h2>Marketing Strategies</h2>
             <p>Join 40,000+ other marketers and get proven strategies on email marketing</p>
         </div>
+        <!-- Slider -->
         <div id="carousel" class="d-flex justify-content-around align-items-center w-100">
-                <div class="slide prev-slide  col-lg-3 col-sm-5 col-10 px-0">
-                    <img src="asset/images/slide-image-1.png" alt="image-1">
-                    <p class="mt-3">By <span>Abdullah</span> | 03 March 2019</p>
-                    <p>Increasing Prosperity With Positive Thinking</p>
-                </div>
-                <div class="slide active col-lg-3 col-sm-5 col-10 px-0">
-                    <img src="asset/images/slide-image-2.png" alt="image-2">
-                    <p  class="mt-3">By <span>Abdullah</span> | 03 March 2019</p>
-                    <p>Motivation Is The First Step To Success</p>
-                </div>
-                <div class="slide next-slide col-lg-3 col-sm-5 col-10 px-0">
-                    <img src="asset/images/slide-image-3.png" alt="image-3">
-                    <p class="mt-3">By <span>Abdullah</span> | 03 March 2019</p>
-                    <p>Success Steps For Your Personal Or Business Life</p>
-                </div>
+            <!-- Slide -->
+            <div class="slide prev-slide  col-lg-3 col-sm-5 col-10 px-0">
+                <img src="asset/images/slide-image-1.png" alt="image-1">
+                <p class="mt-3">By <span>Abdullah</span> | 03 March 2019</p>
+                <p>Increasing Prosperity With Positive Thinking</p>
+            </div>
+            <!-- Slide -->
+            <div class="slide active col-lg-3 col-sm-5 col-10 px-0">
+                <img src="asset/images/slide-image-2.png" alt="image-2">
+                <p class="mt-3">By <span>Abdullah</span> | 03 March 2019</p>
+                <p>Motivation Is The First Step To Success</p>
+            </div>
+            <!-- Slide -->
+            <div class="slide next-slide col-lg-3 col-sm-5 col-10 px-0">
+                <img src="asset/images/slide-image-3.png" alt="image-3">
+                <p class="mt-3">By <span>Abdullah</span> | 03 March 2019</p>
+                <p>Success Steps For Your Personal Or Business Life</p>
+            </div>
+            <!-- Si ajouts de slide juste copier coller sans mettre de class active next ou prev -->
         </div>
+        <!-- Dots -->
         <div id="dots">
             <span class="dot" onclick="change_dots(this,0)"></span>
             <span class="dot active" onclick="change_dots(this,1)"></span>
             <span class="dot" onclick="change_dots(this,2)"></span>
         </div>
+        <!-- Si slide supplementaire mettre un dots supplémentaire en incrementant le nombre dans la function -->
 
     </section>
 
@@ -247,9 +296,11 @@
 
     <!-- Footer -->
     <footer class="col-9 d-flex justify-content-around align-content-center mx-auto my-5 flex-lg-row flex-column">
+        <!-- Logo -->
         <div>
             <img src="asset/images/logo.png" alt="logo" class="img-fluid">
         </div>
+        <!-- Menu 1 -->
         <div>
             <p class="sub-title">Quick Links</p>
             <ul class="px-0">
@@ -259,6 +310,7 @@
                 <li><a href="#">FAQ</a></li>
             </ul>
         </div>
+        <!-- Menu 2 -->
         <div>
             <p class="sub-title">Legal Stuff</p>
             <ul class="px-0">
@@ -268,16 +320,15 @@
                 <li><a href="#">Terms of Service</a></li>
             </ul>
         </div>
+        <!-- Newsletter -->
         <div class="d-flex flex-column justify-content-start align-content-start">
-            <p class="mb-3 gotham-police">knowing you're always on the best energy deal. </p>
+            <p class="mb-3 texte-newsletter">knowing you're always on the best energy deal. </p>
             <input type="text" name="" id="" placeholder="Enter your phone Number">
             <div class="mt-3">
                 <button class="btn" id="footer-button">Sign up Now</button>
             </div>
         </div>
     </footer>
-
-
-
 </body>
+
 </html>

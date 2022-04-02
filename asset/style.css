@@ -1,3 +1,5 @@
+/* Varaible globale */
+
 :root{
     --color-1 : #FF9900;
     --color-2 : #FFFFFF;
@@ -7,10 +9,26 @@
     --color-6 : #BCD0E5;
     --color-7 : #2F281E;
     --color-8 : #EFEFEF;
+
+    --font-size-1 : 14px;
+    --font-size-2 : 16px;
+    --font-size-3 : 18px;
+    --font-size-4 : 20px;
+    --font-size-5 : 24px;
+    --font-size-6 : 36px;
+
+    --font-weight-1 : 400;
+    --font-weight-2 : 500;
+    --font-weight-3 : 700;
+    --font-weight-4 : bold;
+
+    --font-family-1 : Poppins;
+    --font-family-2 : Gotham-Bold;
 }
 
+/* Police */
 @font-face {
-    font-family: "Gotham-Bold";
+    font-family: var(--font-family-2);
     src: url("polices/GothamBold/GothamBold.otf") format("otf");
    }
 
@@ -18,8 +36,6 @@
 font-family: "Poppins";
 src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 }
-
-/* Regle genrale */
 
 /* Body */
 .container-fluid{
@@ -38,9 +54,9 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 
 #navigation .nav-link{
     color: var(--color-7);
-    font-family: Poppins;
-    font-size: 14px;
-    font-weight: 400;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
 }
 
 #navigation .nav-link:hover{
@@ -56,10 +72,10 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 #button-contact,
 #footer-button{
     border: 1px solid;
-    font-size: 16px;
-    font-weight:500;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
     cursor: pointer;
-    font-family: Poppins;
+    font-family: var(--font-family-1);
 }
 
 #signIn,
@@ -85,22 +101,22 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 }
 
 #first-section-button{
-    font-weight: 700;
+    font-weight: var(--font-weight-3);
     padding: 8px 25px;
 }
 
 #feature-button{
-    font-weight: bold;
+    font-weight: var(--font-weight-4);
     padding: 8px 25px;
 }
 
 #button-contact{
-    font-weight: bold;
+    font-weight: var(--font-weight-4);
     padding: 8px 25px;
 }
 
 #footer-button{
-    font-weight: 700;
+    font-weight: var(--font-weight-3);
     padding: 8px 20px;
 }
 
@@ -109,20 +125,20 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 
 #first-section h2{
     font-size: 44px;
-    font-weight: bold;
+    font-weight: var(--font-weight-4);
     color: var(--color-7);
-    font-family: Poppins;
+    font-family: var(--font-family-1);
 }
 
 #first-section p{
     font-size: 18px;
     color: var(--color-7);
-    font-family: Poppins;
+    font-family: var(--font-family-1);
 }
 
 #first-section a{
-    font-size: 16px;
-    font-weight: 700;
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-3);
     color: var(--color-1);
 }
 
@@ -137,32 +153,32 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 }
 
 #feature h2{
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 700;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-3);
 }
 
 #feature .feature-title{
-    font-family: Poppins;
+    font-family: var(--font-family-1);
     font-size: 22px;
     font-weight: 600;
     margin-top: 15px;
 }
 
 #feature .feature-text{
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
 }
 
-/* multi lbock description  */
+/* multi block description  */
 
 #product-manager p,
 #effort-validation p,
 #marketers p{
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
     width: 50%;
 }
 
@@ -173,17 +189,17 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 #product-manager .sub_title,
 #effort-validation .sub_title,
 #marketers .sub_title{
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-3);
 }
 
 #product-manager h2,
 #effort-validation h2,
 #marketers h2{
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 700;  
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-3);  
 }
 
 .up_title{
@@ -194,7 +210,7 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
     width: 85%;
 }
 
-/* Contact */
+/* Contact + personnages*/
 
 #contact{
     background-image: url("images/contact-bg.png");
@@ -204,15 +220,15 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 }
 
 #contact h2{
-    font-family: Poppins;
-    font-size: 36px;
-    font-weight: 700;  
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-3);  
 }
 
 #contact p {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;  
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);  
 }
 
 #contact .bulle-text{
@@ -224,9 +240,9 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 
 #contact .bulle-text p{
     margin: 0px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
 }
 
 #personnage-1 .bulle-text{
@@ -284,6 +300,8 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
     top: 24%;
 }
 
+/*  SLider */
+
 #carousel .slide{
     display:none;
 }
@@ -312,19 +330,19 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
 }
 
 #carousel .slide p{
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;  
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);  
 }
 
 #carousel .slide p:last-child{
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;  
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-5);
+    font-weight: var(--font-weight-3);  
 }
 
 #carousel .slide span{
-    font-weight: 700;  
+    font-weight: var(--font-weight-3);  
 }
 
 
@@ -354,9 +372,9 @@ footer li a{
     color: var(--color-7);
     cursor: pointer;
     text-decoration: none;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
+    font-family: var(--font-family-1);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
 }
 
 footer li a:hover{
@@ -364,9 +382,9 @@ footer li a:hover{
 }
 
 footer .sub-title{
-    font-family: "Gotham-Bold";
-    font-size: 20px;
-    font-weight: 400;
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-1);
 }
 
 footer input{
@@ -375,10 +393,10 @@ footer input{
     border: 1px solid var(--color-3);
 }
 
-.gotham-police{
-    font-family: "Gotham-Bold";
-    font-size: 20px;
-    font-weight: 400;
+.texte-newsletter{
+    font-family: var(--font-family-2);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-1);
 }
 
 
