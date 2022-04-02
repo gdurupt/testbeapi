@@ -60,6 +60,7 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
     font-size: 16px;
     font-weight:500;
     cursor: pointer;
+    font-family: Poppins;
 }
 
 #signIn,
@@ -163,7 +164,7 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
     font-family: Poppins;
     font-size: 16px;
     font-weight: 500;
-    width: 45%;
+    width: 50%;
 }
 
 #product-manager p{
