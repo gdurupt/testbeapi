@@ -191,6 +191,10 @@ src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
     margin-bottom:0px;
 }
 
+#product-manager p {
+    width: 85%;
+}
+
 /* Contact */
 
 #contact{
@@ -498,6 +502,10 @@ footer input{
     #personnage-2 {
         left: 21%;
         bottom: 25%;
+    }
+
+    #product-manager p, #effort-validation p, #marketers p {
+        width: 100%;
     }
 }
 
