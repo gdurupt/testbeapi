@@ -1,0 +1,473 @@
+:root{
+    --color-1 : #FF9900;
+    --color-2 : #FFFFFF;
+    --color-3 : #979797;
+    --color-4 : #173A56;
+    --color-5 : #D8D8D8;
+    --color-6 : #BCD0E5;
+    --color-7 : #2F281E;
+}
+
+/* Body */
+.container-fluid{
+    padding: 0px !important;
+}
+
+/* Navigation */
+#navigation{
+    background-color: var(--color-2);
+    border-top: solid 1px var(--color-3);
+    border-bottom: solid 1px var(--color-3);
+    margin-top: 20px;
+    width: 100vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+#navigation .nav-link{
+    color: var(--color-7);
+}
+
+#navigation .nav-link:hover{
+    color: var(--color-1);
+}
+
+/* boutton page */
+
+#signUp,
+#signIn,
+#first-section-button,
+#feature-button
+#button-contact,
+#footer-button{
+    border: 1px solid;
+    font-size: 16px;
+    font-weight:500;
+    cursor: pointer;
+}
+
+#signIn,
+#button-contact:hover,
+#first-section-button:hover,
+#feature-button:hover,
+#signUp:hover,
+#footer-button:hover{
+    background-color: var(--color-5);
+    border-color: var(--color-6);
+    color: var(--color-4);
+}
+
+#signUp,
+#button-contact,
+#first-section-button,
+#feature-button,
+#signIn:hover,
+#footer-button{
+    background-color: var(--color-1);
+    border-color: var(--color-1);
+    color: var(--color-2);
+}
+
+#first-section-button{
+    font-weight: 700;
+    padding: 8px 25px;
+}
+
+#feature-button{
+    font-weight: bold;
+    padding: 8px 25px;
+}
+
+#button-contact{
+    font-weight: bold;
+    padding: 8px 25px;
+}
+
+#footer-button{
+    font-weight: 700;
+    padding: 8px 20px;
+}
+
+
+/* first-section */
+
+#first-section h2{
+    font-size: 44px;
+    font-weight: bold;
+    color: var(--color-7);
+}
+
+#first-section p{
+    font-size: 18px;
+    font-weight: regular;
+    color: var(--color-7);
+}
+
+#first-section a{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-1);
+}
+
+
+/* feature */
+
+#feature{
+    background-image: url("images/feature-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 543px;
+}
+
+#feature h2{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#feature .feature-title{
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#feature .feature-text{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* multi lbock description  */
+
+#product-manager p,
+#effort-validation p,
+#marketers p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    width: 45%;
+}
+
+#product-manager p{
+    width: 58%;  
+}
+
+#product-manager .sub_title,
+#effort-validation .sub_title,
+#marketers .sub_title{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#product-manager h2,
+#effort-validation h2,
+#marketers h2{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;  
+}
+
+/* Contact */
+
+#contact{
+    background-image: url("images/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 835px;
+}
+
+#contact h2{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;  
+}
+
+#contact p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;  
+}
+
+#contact .bulle-text{
+    background: var(--color-2);
+    padding: 10px 20px;
+    margin: 0px;
+    border-radius: 14px;
+}
+
+#contact .bulle-text p{
+    margin: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#personnage-1 .bulle-text{
+    position: relative;
+    left: 66px;
+    top: 12px;
+}
+
+#personnage-1{
+    left: 14%;
+    top: 31%;
+}
+
+#personnage-2 .bulle-text{
+    position: relative;
+    left: -143px;
+    top: 12px;
+}
+
+#personnage-2{
+    left: 22%;
+    bottom: 20%;
+}
+
+#personnage-3 .bulle-text{
+    position: relative;
+    left: -220px;
+    top: 12px;
+}
+
+#personnage-3{
+    right: 33%;
+    bottom: 10%;
+}
+
+#personnage-4 .bulle-text{
+    position: relative;
+    left: -173px;
+    top: 18px;
+}
+
+#personnage-4{
+    right: 9%;
+    bottom: 25%;
+}
+
+#personnage-5 .bulle-text{
+    position: relative;
+    left: -186px;
+    top: 12px;
+}
+
+#personnage-5{
+    right: 14%;
+    top: 24%;
+}
+
+#carousel .slide{
+    display:none;
+}
+
+#carousel{
+    display: flex;
+}
+   
+#carousel .active,
+#carousel .prev-slide,
+#carousel .next-slide{
+    display:flex;
+    flex-direction: column;
+}
+
+#carousel .active{
+    order: 2;
+}
+
+#carousel .prev-slide{
+    order: 1;
+}
+
+#carousel .next-slide{
+    order: 3;
+}
+
+#carousel .slide p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;  
+}
+
+#carousel .slide p:last-child{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;  
+}
+
+#carousel .slide span{
+    font-weight: 700;  
+}
+
+
+/* Dots */
+#dots .dot{
+    height: 14px;
+    width: 14px;
+    background-color: var(--color-3);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#dots .active{
+    background-color: var(--color-1);
+}
+
+
+/* Footer */
+
+footer li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+footer li a{
+    color: var(--color-7);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    color: var(--color-1);
+}
+
+footer .sub-title{
+    font-family: "Gotham-Bold";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer input{
+    padding: 8px 4px;
+    border-radius: 8px;
+    border: 1px solid var(--color-3);
+}
+
+
+/* Separator */
+
+.separator{
+    border-bottom: 1px var(--color-3) solid;
+    margin: auto;
+    opacity: 0.3;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 1700px) {
+    #feature {
+        background-size: cover;
+        min-height: 300px;
+        background-position: top;
+    }
+
+    #feature-button{
+        position:relative;
+        bottom: 15px;
+
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #feature {
+        background-size: cover;
+        min-height: 300px;
+        background-position: top;
+    }
+
+    #feature-button{
+        position:relative;
+        bottom: 15px;
+
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    #product-manager p, #effort-validation p, #marketers p {
+        width: 80%;
+    }
+    #personnage-3 {
+        right: 16%;
+        bottom: 10%;
+    }
+    #personnage-4 {
+        right: 2%;
+        bottom: 25%;
+    }
+    #personnage-5 {
+        right: 4%;
+        top: 24%;
+    }
+    #personnage-1 {
+        left: 9%;
+        top: 31%;
+    }
+    #contact {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    footer div{
+        margin-top: 15px;
+    }   
+    #personnage-1 {
+        left: 9%;
+        top: 14%;
+    }
+    #personnage-2 {
+        left: 18%;
+        bottom: 25%;
+    }
+    #personnage-5 {
+        right: 0%;
+        top: 16%;
+    }
+    #personnage-4 {
+        right: 0%;
+        bottom: 20%;
+    }
+    #personnage-3 {
+        right: 16%;
+        bottom: 5%;
+    }
+
+    .prev-slide{
+        display:none !important;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .next-slide{
+        display:none !important;
+    }
+    #personnage-1,
+    #personnage-2,
+    #personnage-3,
+    #personnage-4,
+    #personnage-5 {
+        display:none;
+    }
+
+    #contact {
+        min-height: 400px;
+    }
+
+    #first-section h2 {
+        font-size: 30px;
+    }
+
+    #feature h2 {
+        font-size: 26px;
+    }
+    #contact h2,
+    #product-manager h2, #effort-validation h2, #marketers h2 {
+        font-size: 28px;
+    }
+}
