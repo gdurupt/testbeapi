@@ -6,7 +6,20 @@
     --color-5 : #D8D8D8;
     --color-6 : #BCD0E5;
     --color-7 : #2F281E;
+    --color-8 : #EFEFEF;
 }
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("polices/GothamBold/GothamBold.otf") format("otf");
+   }
+
+@font-face {
+font-family: "Poppins";
+src: url("polices/poppins/Poppins-Regular.ttf") format("ttf");
+}
+
+/* Regle genrale */
 
 /* Body */
 .container-fluid{
@@ -26,6 +39,9 @@
 
 #navigation .nav-link{
     color: var(--color-7);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 #navigation .nav-link:hover{
@@ -95,12 +111,13 @@
     font-size: 44px;
     font-weight: bold;
     color: var(--color-7);
+    font-family: Poppins;
 }
 
 #first-section p{
     font-size: 18px;
-    font-weight: regular;
     color: var(--color-7);
+    font-family: Poppins;
 }
 
 #first-section a{
@@ -167,6 +184,10 @@
     font-family: Poppins;
     font-size: 36px;
     font-weight: 700;  
+}
+
+.up_title{
+    margin-bottom:0px;
 }
 
 /* Contact */
@@ -307,7 +328,7 @@
 #dots .dot{
     height: 14px;
     width: 14px;
-    background-color: var(--color-3);
+    background-color: var(--color-8);
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -329,6 +350,9 @@ footer li a{
     color: var(--color-7);
     cursor: pointer;
     text-decoration: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 footer li a:hover{
@@ -347,6 +371,12 @@ footer input{
     border: 1px solid var(--color-3);
 }
 
+.gotham-polic{
+    font-family: "Gotham-Bold";
+    font-size: 20px;
+    font-weight: 400;
+}
+
 
 /* Separator */
 
@@ -354,6 +384,23 @@ footer input{
     border-bottom: 1px var(--color-3) solid;
     margin: auto;
     opacity: 0.3;
+}
+
+
+/* Animation */
+
+@keyframes apparition-image {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+  }
+
+.image_animation{
+    animation-name: apparition-image;
+    animation-duration: 2s;
 }
 
 
@@ -439,6 +486,16 @@ footer input{
 
     .prev-slide{
         display:none !important;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #personnage-1 {
+        left: 9%;
+        top: 8%;
+    }
+    #personnage-2 {
+        display:none
     }
 }
 
